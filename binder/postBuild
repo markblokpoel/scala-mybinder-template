@@ -7,11 +7,10 @@ chmod +x cs
 
 # Install almond 0.11.2 for Scala 2.13.3
 ALMOND_VERSION=0.11.2
-./cs launch "almond:$ALMOND_VERSION" --scala 2.13.3 -- \
+./cs launch "almond:$ALMOND_VERSION" --scala 2.13.3 -M almond.ScalaKernel -- \
   --install \
   --id scala213 \
   --display-name "Scala (2.13)" \
-  -M almond.ScalaKernel \
   --env "JAVA_OPTS=-XX:MaxRAMPercentage=80.0" \
   --variable-inspector \
   </dev/null 2>&1 | grep -v '^Download'
