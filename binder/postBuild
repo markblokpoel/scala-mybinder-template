@@ -16,7 +16,7 @@ SCALA_VERSION=2.13.12 ALMOND_VERSION=0.11.2
   -o almond-scala-2.13 \
   </dev/null 2>&1 | grep -v '^Download'
 ./almond-scala-2.13 --install --id scala213 --display-name "Scala (2.13)" \
-  --command "java -XX:MaxRAMPercentage=80.0 -jar almond-scala-2.11 --id scala211 --display-name 'Scala (2.11)'" \
+  --command "java -XX:MaxRAMPercentage=80.0 -jar almond-scala-2.13 --id scala213 --display-name 'Scala (2.13)'" \
   --copy-launcher \
   --metabrowse
 rm -f almond-scala-2.13
