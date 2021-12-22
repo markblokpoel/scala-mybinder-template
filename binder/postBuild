@@ -18,7 +18,8 @@ ALMOND_VERSION=0.11.2
 # Install required Jupyter/JupyterLab extensions
 jupyter labextension install --minimize=False \
   jupyterlab-plotly \
-  @almond-sh/scalafmt
+  @almond-sh/scalafmt \
+  @almond-sh/jupyterlab_variableinspector
 
 # Set indentation to two spaces
 JUPYTER_CONFIG_DIR=$(jupyter --config-dir)
