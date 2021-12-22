@@ -5,9 +5,10 @@ set -e
 curl -fLo cs https://github.com/coursier/coursier/releases/download/v2.0.3/cs-x86_64-pc-linux
 chmod +x cs
 
-# Install almond 0.11.2 for Scala 2.13.3
+# Install almond 0.11.2 for Scala 2.13.6
 ALMOND_VERSION=0.11.2
-./cs launch "almond:$ALMOND_VERSION" --scala 2.13.3 -M almond.ScalaKernel -- \
+SCALA_VERSION=2.13.6
+./cs launch "almond:$ALMOND_VERSION" --scala $SCALA_VERSION -M almond.ScalaKernel -- \
   --install \
   --id scala213 \
   --display-name "Scala (2.13)" \
