@@ -5,8 +5,8 @@
 This binder template provides Scala support in Jupyter Lab via [almond](https://almond.sh). It further adds support for [plotly-scala](https://github.com/alexarchambault/plotly-scala) and by default only includes the Scala 2.13.3 kernel.
 
 Two (very) minimal examples:
-- [Scala basic](scala.ipynb)
-- [Plotly](plotly.ipynb)
+- [Scala basic](notebooks/scala.ipynb)
+- [Plotly](notebooks/plotly.ipynb)
 
 ## Licenses
 
